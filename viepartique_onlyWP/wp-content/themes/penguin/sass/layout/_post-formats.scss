@@ -1,0 +1,61 @@
+.format-aside .entry-title,
+.format-quote .entry-title,
+.format-quote .entry-meta-bottom,
+.format-link .entry-title,
+.format-link .entry-meta-bottom {
+	display: none;
+}
+.single .format-aside .entry-title,
+.single .format-quote .entry-title,
+.single .format-quote .entry-meta-bottom,
+.single .format-link .entry-title,
+.single .format-link .entry-meta-bottom  {
+	display: block;
+}
+
+/* Post Format Aside */
+.blog .format-aside,
+.archive .format-aside,
+.search .format-aside {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+}
+
+/* Post Format Quote */
+article.format-quote {
+	border-top: none;
+}
+
+/* Post Format Link */
+article.format-link {
+	background-color: $color__primary;
+	border: none;
+	color: white;
+}
+article.format-link .entry-meta-top a {
+	background-color: #fff;
+}
+article.format-link .entry-content a {
+	background-color: #fff;
+	font-size: 1.5em;
+	line-height: 1.2;
+}
+article.format-link .entry-meta-top a:hover,
+article.format-link .entry-meta-top a:focus,
+article.format-link .entry-meta-top a:active,
+article.format-link .entry-content a:hover,
+article.format-link .entry-content a:focus,
+article.format-link .entry-content a:active {
+	background-color: $color__primary;
+	color: white;
+}
+article.format-link .entry-meta-bottom a {
+	color: white;
+	text-decoration: underline;
+}
+article.format-link .entry-meta-bottom a:hover,
+article.format-link .entry-meta-bottom a:focus,
+article.format-link .entry-meta-bottom a:active {
+	text-decoration: none;
+}

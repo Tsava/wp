@@ -1,0 +1,47 @@
+.jumbotron{
+    background-color: rgba(255,255,255,0);
+    margin-bottom: 20px;
+}
+.content {
+    margin-top: 70px;
+}
+.date{
+    color: gray;
+}
+
+form{
+    margin-bottom: 100px;
+    margin-top : 50px;
+}
+
+/*.comment{
+    border: 1px solid gray;
+    border-radius: 20px;
+    text-align: center;
+    width: 500px;
+    margin-left:200px;
+    padding: 20px;
+    margin-top : 30px;
+    
+}*/
+
+.blockquote{
+    margin: 20px;
+    border-bottom : solid gray 1px;
+    padding: 10px;
+   
+}
+
+.muted{
+    font-size: 12px;
+    color: grey;
+}
+.title{
+    margin-bottom: 40px;
+}
+
+
+
+
+
+

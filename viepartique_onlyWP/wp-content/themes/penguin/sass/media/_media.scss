@@ -1,0 +1,147 @@
+.page-content img.wp-smiley,
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+.headerimg {
+	height: 150px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+
+	@media screen and (min-width: 400px) {
+		height: 200px;
+	}
+
+	@media screen and (min-width: 500px) {
+		height: 250px;
+	}
+
+	@media screen and (min-width: 601px) {
+		margin-top: -60px;
+	}
+
+	@media screen and (min-width: 600px) {
+		height: 300px;
+	}
+
+	@media screen and (min-width: 700px) {
+		height: 350px;
+	}
+
+	@media screen and (min-width: 800px) {
+		height: 400px;
+	}
+
+	@media screen and (min-width: 900px) {
+		height: 450px;
+	}
+
+	@media screen and (min-width: 1000px) {
+		height: 500px;
+	}
+
+	img {
+		height: auto;
+		left: 50%;
+		margin: auto;
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		-webkit-transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
+	}
+}
+
+.post-thumbnail {
+	margin-bottom: 5px;
+
+	img {
+		width: 100%;
+	}
+}
+
+.fullwidth-container {
+	left: -10px;
+	position: relative;
+	width: calc(100% + 20px);
+
+	img {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 600px) and (max-width: 991px) {
+	.post-thumbnail {
+		margin-bottom: 15px;
+	}
+
+	.fullwidth-container {
+		left: -20px;
+		width: calc(100% + 40px);
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.post-thumbnail {
+		margin-bottom: 20px;
+	}
+	.page .fullwidth-container,
+	.single .fullwidth-container {
+		left: -50px;
+		width: calc(100% + 100px);
+	}
+	.fullwidth-container,
+	.search .page .fullwidth-container {
+		left: -30px;
+		width: calc(100% + 60px);
+	}
+}
+@media screen and (min-width: 1200px) {
+	.sticky .post-thumbnail,
+	.penguin-post:only-of-type .post-thumbnail {
+		margin-bottom: 40px;
+	}
+}
+
+/* Image shapes */
+.img-rounded {
+	@include border-radius(6px);
+}
+
+.img-circle {
+	@include border-radius(50%);
+}
+
+.img-thumbnail {
+	border: 3px solid #fff;
+	box-shadow: 0px 1px 3px #ccc;
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		box-shadow: 0px 1px 3px $color__dark;
+	}
+}
+
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+5.1 Captions
+--------------------------------------------------------------*/
+@import "captions";
+
+/*--------------------------------------------------------------
+5.2 Galleries
+--------------------------------------------------------------*/
+@import "galleries";

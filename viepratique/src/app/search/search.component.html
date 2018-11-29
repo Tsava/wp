@@ -1,0 +1,25 @@
+<div class="container">
+  <h2 class="display-2 categorie">Recherche</h2>
+  <hr class="line">
+<div class="row">
+    
+  <div *ngFor="let article of articles;let i = index" class="post col-12" (click)="details(article.id)" @flyInOut>
+    
+    <div class="jumbotron">
+      <div class="imgdate" >
+        <div class="img">
+        <img src={{article.better_featured_image.media_details.sizes.large.source_url}} alt="">
+        </div>
+        <div class="titre">
+            <h4 class="centered title text">{{article.title.rendered}} -- <small>[ {{article.date | date : 'short' }} ]</small></h4>
+        </div>
+        
+      </div>
+
+    </div>
+    <div>
+      
+    </div>
+  </div>
+</div>
+</div>

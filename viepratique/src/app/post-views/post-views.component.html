@@ -1,0 +1,25 @@
+<div class="container">
+  <h2 class="display-2 categorie">Populaires</h2>
+  <hr class="line">
+<div class="row">
+  <div *ngFor="let post of posts;let i = index" class="post col-12" (click)="details(post.id)"  @flyInOut>
+    
+    <div class="jumbotron" *ngIf="post.acf.View >=10">
+      <div class="imgdate" >
+        <div class="img">
+        <img src={{post.better_featured_image.media_details.sizes.large.source_url}} alt="">
+        </div>
+        <div class="titre">
+            <h4 class="centered title text">{{post.title.rendered}} -- <small>[ {{post.date | date : 'short' }} ]</small></h4>
+        </div>
+        <p [innerHTML]=post.excerpt.rendered></p>
+        
+      </div>
+
+    </div>
+    <div>
+      
+    </div>
+  </div>
+</div>
+</div>

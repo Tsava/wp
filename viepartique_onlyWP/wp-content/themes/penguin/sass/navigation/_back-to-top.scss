@@ -1,0 +1,36 @@
+#scroll-to-top {
+	background: $color__dark-transparent;
+	border-bottom: none;
+	display: none;
+	height: 60px;
+	position: fixed;
+	right: 0;
+	text-align: center;
+	text-decoration: none;
+	top: 0;
+	width: 60px;
+	z-index: 2000;
+
+	.admin-bar & {
+		@media screen and (min-width: 783px) {
+			top: 32px;
+		}
+	}
+
+	.no-js & {
+		display: none;
+	}
+
+	.bright-navbar & {
+		background: $color__bright-transparent;
+	}
+
+	&:focus {
+		border: 1px solid $color__primary;
+		outline: 0;
+
+		svg {
+			fill: $color__primary;
+		}
+	}
+}

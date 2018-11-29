@@ -1,0 +1,48 @@
+.navigation {
+	margin: 1.5em 0;
+	overflow: hidden;
+
+	.nav-previous,
+	.nav-next {
+		margin-bottom: 3px;
+		width: 100%;
+
+		a {
+			background-color: $color__bg-btn;
+			color: $color__dark;
+			display: block;
+			padding: 12px 16px;
+		}
+
+		a:hover,
+		a:focus,
+		a:active {
+			background-color: $color__primary;
+			color: #fff;
+		}
+	}
+
+	@media screen and (min-width: 400px) {
+		.nav-previous {
+			float: left;
+			max-width: 49.5%;
+		}
+
+		.nav-next {
+			float: right;
+			text-align: right;
+			max-width: 49.5%;
+		}
+	}
+}
+
+@media screen and (min-width: 400px) {
+	.navigation.comment-navigation a,
+	.navigation.posts-navigation a {
+		display: inline-block;
+	}
+}
+
+.meta-nav {
+	font-family: sans-serif;
+}

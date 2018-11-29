@@ -1,0 +1,61 @@
+.widget {
+	
+	#secondary & {
+		margin: 0 0 2em;
+	}
+
+	ul {
+		margin-left: 0;
+		list-style-type: none;
+	}
+
+	li {
+		margin-bottom: .5em;
+	}
+
+	.children,
+	.sub-menu {
+		margin-left: 2em;
+
+		li {
+			margin-bottom: .2em;
+		}
+	}
+
+	select,
+	input[type="search"] {
+		box-sizing: border-box;
+		max-width: 100%;
+		width: 100%;
+	}
+}
+
+.widget-title {
+	border-bottom: 1px solid $color__dark;
+	font-size: 1em;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+}
+
+/* Calendar widget */
+#calendar_wrap table {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+	max-width: 300px;
+	width: 100%;
+
+	th, td {
+		text-align: center;
+	}
+
+	#prev {
+		text-align: left;
+	}
+
+	#next {
+		text-align: right;
+	}
+}

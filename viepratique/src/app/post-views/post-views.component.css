@@ -1,0 +1,14 @@
+.categorie{
+    text-align: center;
+    color: rgb(255, 29, 93);
+    font-family: 'Great Vibes';
+}
+.line{
+    
+    border-color: rgb(255, 29, 93);
+    width: 350px;
+    
+}
+.container{
+    margin-top: 50px;
+}

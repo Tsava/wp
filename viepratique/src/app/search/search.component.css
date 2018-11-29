@@ -1,0 +1,60 @@
+
+
+.container{
+    margin-top: 50px;
+}
+.post{
+    margin: 20px;
+    transition: all 0.5s;
+    border-bottom: 1px rgb(255, 29, 93) solid;
+
+}
+.post:hover{
+    transform: scale(1.1);
+}
+
+.titre{
+    transform: translateY(-130px); 
+    margin-left:20px;
+    color: white;    
+    opacity: 1;
+    transition: all 1s;
+    filter:none;
+    text-align: center;
+    width: 400px;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 20px;
+   
+}
+
+
+
+.img:hover{
+    filter:grayscale(90%);
+
+}
+
+
+
+.small{
+    font-size: 10px;
+}
+.categorie{
+    text-align: center;
+    color: rgb(255, 29, 93);
+    font-family: 'Great Vibes';
+}
+
+.line{
+    
+    border-color: rgb(255, 29, 93);
+    width: 350px;
+    
+}
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+<div class="container" @flyInOut>
+  <div class="jumbotron">
+    <h3 class="display-3 title text-center">{{article.title.rendered}}</h3>
+    <img src={{article.better_featured_image.media_details.sizes.large.source_url}} alt="">
+    <p class="date">{{article.date | date : 'short' }}</p>
+    
+    <hr>
+    <div [innerHTML]="article.content.rendered" class="content"></div>
+    <hr>
+  </div>
+<div class="row">
+  <div *ngFor="let comment of comments;let i = index" class="comment col-6 text-center" @flyInOut>
+    <blockquote class="blockquote">
+      <div class="user-icon"><img src={{comment.author_avatar_urls[48]}} alt=""></div>
+      <div class="mb-0" [innerHTML]=comment.content.rendered></div>
+      <footer class="blockquote-footer">Commented By
+        <cite title="Source Title" [innerHTML]=comment.author_name></cite>
+      </footer>
+      <small class="muted">{{comment.date | date:'short'}}</small>
+    </blockquote>
+  </div>
+</div>
+
+
+  <hr>
+
+
+
+  <form (submit)="addComment()" @flyInOut>
+    <div class="form-group">
+      <label for="Comment">Comment</label>
+      <textarea class="form-control" rows="3" [(ngModel)]="comment" name="comment" placeholder="Comment..."></textarea>
+    </div>
+    <div class="form-row">
+      <div class="col">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" [(ngModel)]="name" name="name" placeholder="Enter your name...">
+      </div>
+
+      <div class="col">
+        <label for="email">E-mail</label>
+        <input type="email" class="form-control" [(ngModel)]="email" name="email" placeholder="Enter your e-mail...">
+      </div>
+    </div>
+    <input type="text" style="visibility: hidden;" [(ngModel)]="check" name="check" name="checker">
+
+    <button type="submit" class="btn btn-primary form-control">Submit</button>
+  </form>
+</div>
